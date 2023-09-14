@@ -1,6 +1,6 @@
 # Node Puppeteer
 
-Web scraping and automating tasks with Node and Puppeteer
+Web scraping and task automation with Node and Puppeteer
 
 ## How It's Made
 
