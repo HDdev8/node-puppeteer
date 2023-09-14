@@ -1,8 +1,13 @@
 const {readFile} = require("node:fs").promises;
 const os = require("node:os");
 const path = require("node:path");
-const puppeteer = require("puppeteer");
+const puppeteer = require("puppeteer-extra");
 const NodeEnvironment = require("jest-environment-node").TestEnvironment;
+const StealthPlugin = require("puppeteer-extra-plugin-stealth");
+const AdblockerPlugin = require("puppeteer-extra-plugin-adblocker");
+
+puppeteer.use(StealthPlugin());
+puppeteer.use(AdblockerPlugin({blockTrackers: true}));
 
 const DIR = path.join(os.tmpdir(), "jest_puppeteer_global_setup");
 

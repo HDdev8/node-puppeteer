@@ -5,6 +5,13 @@
     "es2021": true,
     "jest": true
   },
+  "globals": {
+    "page": true,
+    "browser": true,
+    "context": true,
+    "puppeteerConfig": true,
+    "jestPuppeteer": true
+  },
   "extends": [
     "eslint:recommended",
     "plugin:import/recommended",
