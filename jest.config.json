@@ -1,5 +1,9 @@
 {
   "verbose": true,
   "coveragePathIgnorePatterns": ["<rootDir>/node_modules/"],
-  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.[jt]sx?$"
+  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.[jt]sx?$",
+  "preset": "jest-puppeteer",
+  "globalSetup": "./setup.js",
+  "globalTeardown": "./teardown.js",
+  "testEnvironment": "./puppeteer_environment.js"
 }
