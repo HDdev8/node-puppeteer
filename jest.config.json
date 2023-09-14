@@ -1,0 +1,5 @@
+{
+  "verbose": true,
+  "coveragePathIgnorePatterns": ["<rootDir>/node_modules/"],
+  "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.[jt]sx?$"
+}

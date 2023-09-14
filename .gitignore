@@ -1,3 +1,51 @@
+############################################# MacOS #############################################
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+*.local
+
+############################################# Visual Studio Code #############################################
+.vscode/*
+# !.vscode/settings.json
+# !.vscode/tasks.json
+# !.vscode/launch.json
+# !.vscode/extensions.json
+# !.vscode/*.code-snippets
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+############################################# Node #############################################
 # Logs
 logs
 *.log
@@ -69,6 +117,13 @@ web_modules/
 # Output of 'npm pack'
 *.tgz
 
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
 # Yarn Integrity file
 .yarn-integrity
 
@@ -89,7 +144,11 @@ out
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+
+## dist & build
+# dist
+# build
+dist-ssr
 
 # Gatsby files
 .cache/
@@ -119,12 +178,4 @@ dist
 # TernJS port file
 .tern-port
 
-# Stores VSCode versions used for testing VSCode extensions
-.vscode-test
-
-# yarn v2
-.yarn/cache
-.yarn/unplugged
-.yarn/build-state.yml
-.yarn/install-state.gz
-.pnp.*
+############################################# other #############################################
