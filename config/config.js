@@ -1,5 +1,5 @@
 const path = require("node:path");
-require("dotenv").config({path: path.resolve(__dirname, "./.env")});
+require("dotenv").config({path: path.resolve(__dirname, "../.env")});
 
 const R_USERNAME = process.env.R_USERNAME;
 const R_PASSWORD = process.env.R_PASSWORD;
@@ -10,5 +10,3 @@ module.exports = {
   R_PASSWORD,
   PORT,
 };
-
-module.exports = {R_USERNAME, R_PASSWORD, PORT};
